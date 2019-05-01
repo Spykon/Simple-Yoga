@@ -1,0 +1,115 @@
+.about {
+    background-color: $col-sfo-01;
+    padding: 15rem 0;
+    margin-top: -10%;
+
+    @include respond(tab-port) {
+        padding: 12rem 0;
+    }
+}
+
+.features {
+    padding: 20rem 0;
+    background-image: linear-gradient(to bottom,
+                     rgba($col-pri, 0.9),
+                     rgba($col-pri, 0.2)), 
+                     url("../img/background-3.jpg");
+    background-size: cover;
+    background-position: center;
+    // background-attachment: fixed;
+    // height: 100vh;
+    -webkit-clip-path: polygon(0 0, 50% 10%, 100% 0, 100% 90%, 50% 100%, 0 90%);
+    clip-path: polygon(0 0, 50% 10%, 100% 0, 100% 90%, 50% 100%, 0 90%);
+    // height: 95vh;
+    margin-top: -10%;
+
+    @include respond(tab-port) {
+        padding: 15rem 0 12rem 0;
+        -webkit-clip-path: polygon(0 0, 50% 10%, 100% 0, 100% 90%, 50% 100%, 0 90%);
+        clip-path: polygon(0 0, 50% 5%, 100% 0, 100% 95%, 50% 100%, 0 95%);
+        // margin-top: -10%;
+    }
+}
+
+.plans {
+    background-image: linear-gradient(to bottom,
+                     rgba($col-sfo-01, 0.9),
+                     rgba($col-sfo-01, 0.2));
+    // background-color: $col-sfo-01;
+    padding: 15rem 0 5rem 0;
+    margin-top: -10%;
+
+    @include respond(tab-port) {
+        padding: 18rem 0 8rem 0;
+        margin-top: -10%;
+    }
+}
+
+.testimonials {
+    position: relative;
+    // background-color: $col-sfo-02;
+    padding: 15rem 0;
+    -webkit-clip-path: polygon(0 0, 50% 10%, 100% 0, 100% 90%, 50% 100%, 0 90%);
+    clip-path: polygon(0 0, 50% 10%, 100% 0, 100% 90%, 50% 100%, 0 90%);
+    margin-top: -10%;
+
+    @include respond(tab-port) {
+        padding: 18rem 0 8rem 0;
+        -webkit-clip-path: polygon(0 0, 50% 10%, 100% 0, 100% 90%, 50% 100%, 0 90%);
+        clip-path: polygon(0 0, 50% 5%, 100% 0, 100% 95%, 50% 100%, 0 95%);
+    }
+}
+
+.booking {
+    padding: 25rem 0 15rem 0;
+    background-image: linear-gradient(to top,
+                     rgba($col-sfo-01, 0.9),
+                     rgba($col-sfo-01, 0.2));
+    margin-top: -10%;
+    // z-index: -111;
+
+}
+
+.book {
+    // height: 58rem;
+    background-image: linear-gradient(120deg,
+                                    rgba($col-black, .6) 0%,
+                                    rgba($col-black, .4) 44%,
+                                    transparent 50%),
+                                    url("../img/background-4.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: .8rem;
+    box-shadow: 0 1.5rem 4rem rgba($col-black, .2);
+
+    @include respond(tab-land) {
+        background-image: linear-gradient(120deg,
+                                    rgba($col-black, .6) 0%,
+                                    rgba($col-black, .4) 64%,
+                                    transparent 70%),
+                                    url("../img/background-4.jpg");
+
+    }
+
+    @include respond(tab-port) {
+        background-image: linear-gradient(to right,
+                                    rgba($col-black, .6) 0%,
+                                    rgba($col-black, .4) 100%),
+                                    url("../img/background-4.jpg");
+    }
+
+    &__form {
+        width: 50%;
+        padding: 6rem;
+
+        @include respond(tab-land) {
+            width: 70%;
+        }
+
+        @include respond(tab-port) {
+            width: 100%;
+        }
+    }
+
+    
+}

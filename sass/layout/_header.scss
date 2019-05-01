@@ -1,0 +1,32 @@
+.header {
+    position: relative;
+    background-image: linear-gradient(to bottom,
+                     rgba($col-pri, 0.9),
+                     rgba($col-pri, 0.2)), 
+                     url("../img/background-1.jpg");
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    height: 95vh;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
+
+    &__logo-box {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    }
+
+    &__logo {
+        width: 5.5rem;
+        height: auto;
+    }
+
+    &__head-box {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+}

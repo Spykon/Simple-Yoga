@@ -1,0 +1,100 @@
+.btn {
+
+    &:link,
+    &:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        display: inline-block;
+        padding: 1.5rem 3rem;
+        border-radius: 2rem;
+        letter-spacing: .3rem;
+        margin-top: 9.6rem;
+        position: relative;
+        transition: all .2s;
+        font-size: $default-fs;
+    }
+
+    &:hover {
+        transform: translateY(-.3rem);
+        box-shadow: 0 .8rem 1.6rem rgba($col-black,.5);
+        backface-visibility: hidden;
+
+        &::after {
+            transform: scale(1.6);
+            opacity: 0;
+        }
+    }
+
+    &:active {
+        transform: translateY(-.1rem);
+        box-shadow: 0 .8rem 1.6rem rgba($col-black,.3);
+    }
+
+    &--pri {
+        color: $col-font-01;
+        background-color: rgba($col-pri, 0.8);
+
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        display: inline-block;
+        border-radius: 2rem;
+        transition: all .4s;
+    }
+
+    &--pri::after {
+        background-color: rgba($col-pri, 0.8);
+    }
+
+    &--animated {
+        animation: moveInBottom 1s ease-out .75s;
+        animation-fill-mode: backwards;
+    }
+    
+}
+
+.btn-text {
+    &,
+    &:link,
+    &:visited {
+        font-size: $default-fs;
+        // font-weight: 300;
+        display: inline-block;
+        text-decoration: none;
+        color: $col-font-01;
+        padding: 1.2rem 1.8rem;
+        background-color: rgba($col-pri, .8);
+        border-radius: 2rem;
+        transition: all .4s;
+
+        // FOR BUTTON FORM
+        border: none;
+        cursor: pointer;
+    }
+
+    &:hover {
+        transform: translateY(-.3rem);
+        box-shadow: 0 .4rem 1.2rem rgba($col-black,.5);
+        backface-visibility: hidden;
+    }
+
+    &:active,
+    &:focus {
+        transform: translateY(-.1rem);
+        box-shadow: 0 .4rem 1.2rem rgba($col-black,.3);
+        outline: none;
+    }
+
+    // &-1 {
+    //     color: $col-white;
+    //     background-color: red;
+    // }
+
+}

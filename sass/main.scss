@@ -1,0 +1,41 @@
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/bg-video";
+@import "components/button";
+@import "components/card";
+@import "components/composition";
+@import "components/feature-box";
+@import "components/form";
+@import "components/popup";
+@import "components/testimonial";
+
+@import "layout/footer";
+@import "layout/grid";
+@import "layout/header";
+@import "layout/navigation";
+
+@import "pages/home";
+
+/* COLORS
+
+$col-pri-li= ;
+$col-pri-dar= ;
+
+*/
+
+/* h1 {
+    position: absolute;
+  
+    background-color: rgba(0,0,0,.3);
+    padding: 4px;
+    border-radius: 8px;
+    width: 60%;
+    /* padding: 0 auto; */
+    /* clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 140%, 0 90%); */
